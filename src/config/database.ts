@@ -1,4 +1,4 @@
-const pg = (connectionString: string) => {
+const pg = () => {
   return require('knex')({
     client: 'pg',
     connection: {

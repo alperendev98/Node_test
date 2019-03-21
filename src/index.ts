@@ -25,5 +25,5 @@ require("fs").readdirSync(normalizedPath).forEach(function (file: string) {
 attachControllers(app, controllers);
 
 app.listen(config.port, config.host, () => {
-  console.log(`Yerevan is listening on port http://${config.host}:${config.port}!`);
+  console.log(`server is listening on port http://${config.host}:${config.port}!`);
 });

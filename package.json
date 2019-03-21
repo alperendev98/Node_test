@@ -5,17 +5,18 @@
   "main": "lib/index",
   "types": "lib/index",
   "scripts": {
-    "start": "npm run build:live",
     "build:live": "nodemon --watch src/**/*.ts --exec ts-node src/index.ts",
     "build": "tsc && npm run lint",
     "clean": "rimraf ./lib",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "tsc": "tsc",
+    "start": "node lib/src/index.js",
+    "start:dev": "node --inspect=0.0.0.0:5858 lib/src/index.js",
     "test": "mocha -r ts-node/register src/**/*.spec.ts"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alonavns/Yerevan.git"
+    "url": "https://github.com/alperendev98/Node_test.git"
   },
   "keywords": [
     "Node",
@@ -38,9 +39,9 @@
     "typescript-eslint-parser": "^21.0.1"
   },
   "bugs": {
-    "url": "https://github.com/alonavns/Yerevan/issues"
+    "url": "https://github.com/alperendev98/Node_test/issues"
   },
-  "homepage": "https://github.com/alonavns/Yerevan",
+  "homepage": "https://github.com/alperendev98/Node_test",
   "dependencies": {
     "@decorators/common": "^1.1.2",
     "@decorators/di": "^1.0.2",

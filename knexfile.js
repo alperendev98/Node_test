@@ -7,6 +7,7 @@ module.exports = {
     connection: {
       database: 'alperen_dev',
       user: 'postgres',
+      port: 5433,
       password: 'postgres'
     },
     pool: {

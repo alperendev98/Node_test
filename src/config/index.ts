@@ -11,10 +11,6 @@ if (process.env.NODE_ENV !== "production") {
   dotenv.config();
 }
 
-if (process.env.PG_CONNECTION_STRING) {
-  config.db = pg(process.env.PG_CONNECTION_STRING);
-} else {
-  throw new Error(`Missing Env : [PG_CONNECTION_STRING]`);
-}
+config.db = pg();
 
 export default config;
